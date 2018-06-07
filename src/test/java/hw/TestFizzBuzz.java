@@ -6,13 +6,13 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-public class TestHelloWorld {
+public class TestFizzBuzz {
 
-  private HelloWorld fixture;
+  private FizzBuzz fixture;
 
   @Before
   public void setUp() throws Exception {
-    fixture = new HelloWorld();
+    fixture = new FizzBuzz();
   }
 
   @After
@@ -33,7 +33,7 @@ public class TestHelloWorld {
   }
 
   @Test
-  public void getYear() { // this test is OK, fix HelloWorld.java to make it pass!
+  public void getYear() { // this test is OK, fix FizzBuzz.java to make it pass!
     assertNotNull(fixture);
     assertEquals(2018, fixture.getYear());
   }
