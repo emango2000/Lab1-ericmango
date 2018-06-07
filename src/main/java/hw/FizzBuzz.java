@@ -1,12 +1,15 @@
 package hw;
 
 public class FizzBuzz {
+  public static void fizzBuzz(); {
+    int max = 0;
 
-  public String getMessage() {
-    return "hello world";
-  }
-
-  public int getYear() {
-    return 2017;
+    if (args.length > 0) {
+      try {
+        max = Integer.parseInt(args[0]);
+      } catch (NumberFormatException e) {
+        System.out.println("The argument entered must be an integer ");
+      }
+    }
   }
 }
